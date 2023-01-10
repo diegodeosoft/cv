@@ -1,0 +1,364 @@
+/* Fuente de Google */
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+
+/**********
+/* efectos botones
+**********/
+button {
+    margin: 10px;
+    position: relative;
+    border: none;
+    outline: none;
+    background: #ffffff;
+    cursor: pointer;
+    transition: .5s;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+}
+button img {
+    width: 40px;
+    height: 40px;
+}
+button:hover {
+    color: rgb(0, 4, 255);
+}
+
+button span {
+    position: absolute;
+    background: rgb(38, 0, 255);
+    transition: .5s;
+}
+
+button span:nth-child(1) {
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: -100%;
+}
+
+button span:nth-child(2) {
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    right: -100%;
+}
+
+button span:nth-child(3) {
+    width: 2px;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+}
+
+button span:nth-child(4) {
+    width: 2px;
+    height: 100%;
+    top: -100%;
+    right: 0;
+}
+
+button:hover span:nth-child(1) {
+    left: 0;
+}
+
+button:hover span:nth-child(2) {
+    right: 0;
+}
+
+button:hover span:nth-child(3) {
+    bottom: 0;
+}
+
+button:hover span:nth-child(4) {
+    top: 0;
+}
+
+/**********
+/* Titulo
+**********/
+.container_16 {
+	max-width: 860px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.grid_8,
+.grid_16 {
+	display: inline;
+	float: left;
+	position: relative;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.container_16 .grid_8 {
+	width: 45.0%;
+    margin-right: 30px;
+}
+
+.container_16 .grid_16 {
+	width: 90.0%;
+}
+
+/**********
+/* Header
+**********/
+header {
+  background: #3c3c4d;
+  border-bottom: 1px solid #978181;
+  padding: 19px 0;
+  overflow: hidden;
+}
+
+header figure {
+  float: left;
+  height: 175px;
+  width: 175px;
+}
+
+header figure img {
+  border-radius: 60px;
+  border: solid rgb(105, 209, 216);
+  height: 175px;
+  width: 175px;
+  position: relative;
+}
+
+header hgroup {
+  float: right;
+  text-align: center;
+}
+
+header hgroup h1 {
+  color: #fff;
+  font-style: bold;
+  font: 600 50px Mukto;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.3);
+}
+
+header hgroup h2 {
+  color: #fff;
+  font-style: italic;
+  font: 400 30px Mukto;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.3);
+}
+
+/***************
+/* Main section
+***************/
+p {
+  font: 300 15px Mukto;
+  color: #000000;
+}
+
+section[role=main] {
+  padding: 21px 0;
+  overflow: hidden;
+}
+
+section[role=main] > div {
+  margin-top: 10px;
+}
+
+section[role=main] h3 {
+  border-bottom: 2px solid #5dc8d6;
+  padding: 0 0 10px 60px;
+  margin-top: 0px;
+  position: relative;
+  font: 400 20px Mukto;
+}
+
+.icon {
+  display: block;
+  height: 50px;
+  left: 0;
+  position: absolute;
+  top: -15px;
+  width: 50px;
+}
+
+.experiences ul, .training ul {
+  /*margin-left: 60px;*/
+  padding: 0px;
+}
+
+section[role=main] h4 {
+  margin-bottom: 0px;
+}
+
+section[role=main] h4 strong {
+  color: #54d9e2;
+  font-weight: normal;
+  font: 400 20px Mukto;
+}
+
+.experiences li, .training li {
+  margin-bottom: 35px;
+  list-style: none;
+  font: 200 15px Mukto;
+}
+
+/**************
+/* conocimientos 
+***************/
+
+.knowledge .values {
+  padding: 0px;
+}
+
+.knowledge .values li {
+  margin-bottom: 21px;
+  position: relative;
+  list-style: none;
+  font: 400 14px Mukto;
+}
+
+.knowledge .values li:after {
+		background: #e1e1e1;
+		bottom: -4px;
+		content: ' ';
+		display: block;
+		height: 5px;
+		position: absolute;
+		width: 100%;
+	}
+
+.knowledge .values li span {
+  background: #50d4d4;
+  bottom: -4px;
+  content: ' ';
+  display: block;
+  height: 5px;
+  left: 0;
+  position: absolute;
+  width: inherit;
+  z-index: 1;
+}
+
+.grid_8 ul {
+  padding: 15px;
+}
+
+.grid_8 ul li {
+  font: 400 15px Mukto;
+  margin-bottom: 3px;
+  list-style: none;
+}
+
+.grid_8 .information li:before, .grid_8 .contact li:before {
+  /* For a round bullet */
+  content: '\2022';
+  /* For a square bullet */
+  /*content:'\25A0';*/
+  font: 400 15px Mukto;
+  margin-bottom: 3px;
+  display: block;
+  position: relative;
+  max-width: 0;
+  max-height: 0;
+  left: -15px;
+  top: 0;
+  color: #33a4c9;
+  font-size: 20px;
+}
+
+/*.socialmedia {
+
+}*/
+
+.social {
+    width: 40px;
+    height: 40px;
+    margin: 10px 30px 10px 50px;
+  }
+  
+.formation1 {
+    float: left;
+  }
+  
+.formation2 {
+    float: right;
+  }
+
+/**************
+/* Animaciones
+***************/
+
+.fadeInDown {
+  /* Chrome, Safari, Opera */
+  -webkit-animation: fadeInDown 5s; 
+  animation: fadeInDown 5s;
+}
+
+.fadeInUp {
+  /* Chrome, Safari, Opera */  
+  -webkit-animation: fadeInUp 5s; 
+  animation: fadeInUp 5s;
+}
+
+.fadeInUp2 {
+  /* Chrome, Safari, Opera */  
+  -webkit-animation: fadeInUp2 5s; 
+  animation: fadeInUp2 5s;
+}
+
+.fadeInLeft {
+  /* Chrome, Safari, Opera */  
+  -webkit-animation: fadeInLeft 5s; 
+  animation: fadeInLeft 5s;
+}
+
+.fadeInRight {
+  /* Chrome, Safari, Opera */  
+  -webkit-animation: fadeInRight 5s; 
+  animation: fadeInRight 5s;
+}
+
+.appear {
+  /* Chrome, Safari, Opera */
+  -webkit-animation: appear 5s; 
+  animation: appear 5s;
+}
+
+/* Chrome, Safari, Opera */
+@keyframes fadeInDown { 
+    0% { opacity: 0; transform: translate3d(0, -100%, 0); }
+  100% { opacity: 1; transform: none; }
+}
+
+/* Chrome, Safari, Opera */
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translate3d(0, 100%, 0); }
+  100% { opacity: 1; transform: none; }
+}
+
+/* Chrome, Safari, Opera */
+@keyframes fadeInUp2 {
+    0% { opacity: 0; transform: translate3d(0, 100%, 0); }
+  100% { opacity: 1; transform: none; }
+}
+
+/* Chrome, Safari, Opera */
+@keyframes fadeInLeft {
+    0% { opacity: 0; transform: translate3d(-100%, 0, 0); }
+  100% { opacity: 1; transform: none; }
+}
+
+/* Chrome, Safari, Opera */
+@keyframes fadeInRight {
+    0% { opacity: 0; transform: translate3d(100%, 0, 0); }
+  100% { opacity: 1; transform: none; }
+}
+
+/* Chrome, Safari, Opera */
+@keyframes appear {
+    0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+footer {
+    width: 20%;
+    margin: auto;
+  }
